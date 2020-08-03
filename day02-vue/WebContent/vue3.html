@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./js/vue.js"></script>
+</head>
+<body>
+<div id="vm">
+	<!-- 姓名：<input type="text" v-model="name">
+	<input type="text" v-model="num"> -->
+	<form action="">
+		<input v-model="user.name">
+		<input v-model="user.grade">
+	</form>
+</div>
+<script type="text/javascript">
+	var vm = new Vue({
+		el:"#vm",
+		data:{
+			/* name:"asd",
+			num:18 */
+			user:{
+				name:"zhangs",
+				grade:"adad"
+			}
+		},
+		created(){
+			this.num=30;
+		}
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+	<input  v-model="name">
+	<input v-model="num">
+	{{num}}
+	<button v-on:click="num++">家</button>
+	<button @click="num--">健</button>
+		<h2>{{name}} 非常帅</h2>
+	</div>
+	<script src="./node_modules/vue/dist/vue.js"></script>
+	<script type="text/javascript">
+		// 生成一个Vue实例 
+		var app = new Vue({ 
+			el:"#app", // el,即element。要渲染的的页面元素 
+			data:{ // 数据 
+				name:"你", 
+				num:20
+				} 
+		})
+	</script>
+</body>
+</html>
